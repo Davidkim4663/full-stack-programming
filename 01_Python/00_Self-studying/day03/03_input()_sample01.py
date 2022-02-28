@@ -1,9 +1,7 @@
-# Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
-# Type "help", "copyright", "credits" or "license()" for more information.
-# input("Hello! welcome to Python land>")
-# Hello! welcome to Python land>Hi
-# 'Hi'
-# string = input("Hello! welcome to Python land>")
-# Hello! welcome to Python land>Hi
-# print(string)
-# Hi
+#input() 함수로 사용자 입력 받기, input() 함수의 입력 자료형
+string = input("인사말을 입력하세요>")
+print(type(string),string)
+
+
+
+

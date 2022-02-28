@@ -17,7 +17,8 @@ pi = 3.14159265
 print(pi/2)
 
 pi = 3.14159265
-print(pi//2)
+print(pi//2,type(pi//2))
+# print(type(pi//2))
 
 pi = 3.14159265
 print(pi%2)

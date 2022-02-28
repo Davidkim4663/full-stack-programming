@@ -1,11 +1,6 @@
-# Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
-# Type "help", "copyright", "credits" or "license()" for more information.
+import string
 
-# = RESTART: C:\01_Development\Programming\full-stack-programming\01_Python\00_Self-studying\day03\03_input()_sample2.py
-# 숫자를 입력하세요>12345
-# number = input("숫자를 입력하세요>")
-# 숫자를 입력하세요>12345
-# print(number)
-# 12345
-# print(type(number))
-# <class 'str'>
+
+# input() 함수의 입력 자료형
+number = input("숫자를 입력하세요>")
+print(type(number),number) #input() 함수는 사용자가 무엇을 입력해도 결과는 무조건 문자열 자료형(string)
