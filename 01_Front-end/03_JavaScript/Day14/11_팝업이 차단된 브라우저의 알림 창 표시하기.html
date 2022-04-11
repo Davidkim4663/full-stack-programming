@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>window 객체</title>
+</head>
+<body onload="openPopup()">
+  <p>문서를 열면 팝업 창이 표시 됩니다.</p>
+
+  <script>
+    var blocked = false;
+    var newWin = window.open("notice.html", "pop", "width=500, height = 400");
+    if(newWin == null){
+      alert("팝업치 차단되어 있습니다. 팝업 차단을 해주세요.")
+    }
+    newWin.moveBy(100,100);
+  </script>
+  
+</body>
+</html>
