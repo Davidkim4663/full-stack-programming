@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 이벤트</title>
+   <link rel="stylesheet" href="css/event.css">
+</head>
+<body>
+  <div id="item">
+    <img src="images/flower.jpg" alt="">
+    <button class="over" id="open">상세 설명 보기</button>
+    <!-- HTMl 태그에 자바스크립트 소스가 섞여 있지 않다. -->
+    <div id="desc" class="detail">
+      <h4>등심분꽃</h4>
+      <p>북아메리카 원산으로.... 번식 한다</p>
+      <button id="close">상세 설명 닫기</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('#open').onclick = function(){
+      document.querySelector('#desc').style.display = "block";
+      document.querySelector('#open').style.display = "none";
+    }
+    document.querySelector('#close').onclick = function(){
+      document.querySelector('#desc').style.display ="none";
+      document.querySelector('#open').style.display ="block";
+    }
+  </script>
+</body>
+</html>
